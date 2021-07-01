@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Veriler"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/Mesafe"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="425dp"
+            android:layout_marginLeft="-350dp"
+            android:background="@color/colorPrimary"
+            >
+        </EditText>
+        <Spinner
+            android:id="@+id/day1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="425dp"
+            android:layout_marginLeft="25dp"
+            android:spinnerMode="dropdown"
+            android:background="@color/colorPrimary"
+            >
+        </Spinner>
+        <Spinner
+            android:id="@+id/day2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="425dp"
+            android:layout_marginLeft="25dp"
+            android:spinnerMode="dropdown"
+            android:background="@color/colorPrimary"
+            >
+        </Spinner>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:id="@+id/linearLayoutCompat2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="@id/linearLayoutCompat"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutCompat">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tip1button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="Tip 1">
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tip2button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="60dp"
+            android:text="Tip 2">
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tip3button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="60dp"
+            android:text="Tip 3"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
